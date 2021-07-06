@@ -13,8 +13,9 @@ import static view.TextConstants.WRONG_INPUT_DATA;
 public class View {
     static String MESSAGE_BUNDLE_NAME = "message";
     public static final ResourceBundle bundle = ResourceBundle.getBundle(
-            MESSAGE_BUNDLE_NAME, new Locale("ua", "UA"));
-//                               new Locale("en"));
+            MESSAGE_BUNDLE_NAME,
+//            new Locale("ua", "UA"));
+          new Locale("en"));
 
     /**
      * Method serving for output data from class Controller and UtilityController
@@ -37,7 +38,7 @@ public class View {
         return new String(concatString);
     }
 
-    public void printStringOutput(String message) {
+    public void printStringInput(String message) {
         printMessage(concatenationString(bundle.getString(INPUT_STRING_DATA),
                 bundle.getString(message)));
     }

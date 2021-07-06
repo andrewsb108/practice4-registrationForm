@@ -2,6 +2,9 @@ package controller;
 
 import model.Model;
 import view.View;
+
+import java.util.Scanner;
+
 /**
  * class Controller gets data from console line and validates it.
  * Controller uses Model for business logic
@@ -20,6 +23,8 @@ public class Controller {
     }
 
     public void processUser() {
-
+        Scanner sc = new Scanner(System.in);
+        Notebook inputNoteNotebook = new Notebook(view, sc);
+        inputNoteNotebook.inputNote();
     }
 }
