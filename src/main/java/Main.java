@@ -4,6 +4,7 @@ import view.View;
 /**
  * Basis class of the program for launching application
  * @author Andrii Barsuk
+ * @see Controller
  */
 public class Main {
     public static void main(String[] args) {

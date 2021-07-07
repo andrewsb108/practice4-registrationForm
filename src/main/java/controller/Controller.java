@@ -24,7 +24,7 @@ public class Controller {
 
     public void processUser() {
         Scanner sc = new Scanner(System.in);
-        Notebook inputNoteNotebook = new Notebook(view, sc);
+        InputNote inputNoteNotebook = new InputNote(view, sc);
         inputNoteNotebook.inputNote();
     }
 }

@@ -1,6 +1,5 @@
 package controller;
 
-import model.Model;
 import view.View;
 
 import java.util.Scanner;
@@ -12,14 +11,14 @@ import static view.TextConstants.LOGIN_DATA;
 /**
  * @author Andriy Barsuk
  */
-public class Notebook {
+public class InputNote {
     private View view;
     private Scanner sc;
 
     private String firstName;
     private String login;
 
-    Notebook(View view, Scanner sc) {
+    InputNote(View view, Scanner sc) {
         this.view = view;
         this.sc = sc;
     }

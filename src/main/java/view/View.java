@@ -33,7 +33,7 @@ public class View {
     public String concatenationString(String ... message) {
         StringBuilder concatString = new StringBuilder();
         for (String value : message) {
-            concatString.append(value);
+           concatString = concatString.append(value);
         }
         return new String(concatString);
     }
